@@ -51,7 +51,6 @@ public class AutoDiagnosticServiceTest {
 
     @Test
     void diagnoseWithNegativeValuesShouldReturnsEmptyString() {
-        // those values are not multiples of 3 or 5
         int[] values = {-1, -2, -3, -4, -5, -6, -7, -8, -9, -10};
         String expected = "";
         for (int value : values) {
@@ -62,7 +61,6 @@ public class AutoDiagnosticServiceTest {
 
     @Test
     void diagnoseWithZeroShouldReturnsEmptyString() {
-        // those values are not multiples of 3 or 5
         int value = 0;
         String expected = "";
         String actual = AutoDiagnosticService.diagnose(value);
